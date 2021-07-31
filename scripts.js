@@ -1,18 +1,27 @@
-//create request varible
-var request = new XMLHttpRequest()
+// //create request varible
+// var request = new XMLHttpRequest()
 
-//open connection
-request.open('GET', 'https://db.ygoprodeck.com/api/v7/cardinfo.php', true)
+// //open connection
+// request.open('GET', 'https://db.ygoprodeck.com/api/v7/cardinfo.php', true)
 
-request.onload = function () {
-//begin accessing data here
-var defense = 
-var stregnth = 
-var name = 
-//trying to make variables for the atk, def, and name of each monster
-}
+// request.onload = function () {
+// //begin accessing data here
+// var defense = "def"
+// var stregnth = "atk"
+// var name = "name"
+// var cardImg = "image_url"
+// //trying to make variables for the atk, def, image, and name of each monster
+// }
 
-//send request
-request.send()
+// //send request
+// request.send()
 
 //I think this is how you link an api?
+
+fetch(https://db.ygoprodeck.com/api/v7/cardinfo.php')
+    .then((resObject) => {
+        return resObject.json()
+    })
+    .then((json) => {
+        console.log(json)
+    })
