@@ -42,6 +42,20 @@ function displayApiData(data) {
         h2.append(h2TExt1)
         h2.append(h2TExt2)
         dataEl.append(h2)  
-    });
-    
+    }); 
+    // frontData.forEach(card => {
+    //     let h2 = document.createElement('h2');
+    //     let h2TExt = document.createTextNode(card.name)
+    //     h2.append(h2TExt)
+    //     dataEl.append(h2) 
+    // })
+    // backData.forEach(card => {
+    //     let h3 = document.createElement('h3');
+    //      let h3TExt1 = document.createTextNode(card.race)
+    //      let h3TExt2 = document.createTextNode(card.type)
+    //      h3.append(h3TExt1)
+    //      h3.append(h3TExt2)
+    //      dataEl.append(h3) 
+    //  }) 
 }
+        
