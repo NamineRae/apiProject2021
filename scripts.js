@@ -1,23 +1,4 @@
-// //create request varible
-// var request = new XMLHttpRequest()
-
-// //open connection
-// request.open('GET', 'https://db.ygoprodeck.com/api/v7/cardinfo.php', true)
-
-// request.onload = function () {
-// //begin accessing data here
-// var defense = "def"
-// var stregnth = "atk"
-// var name = "name"
-// var cardImg = "image_url"
-// //trying to make variables for the atk, def, image, and name of each monster
-// }
-
-// //send request
-// request.send()
-
-//I think this is how you link an api?
-
+//connect to the api
 fetch('https://db.ygoprodeck.com/api/v7/cardinfo.php')
     .then((resObject) => {
         return resObject.json()
@@ -27,10 +8,8 @@ fetch('https://db.ygoprodeck.com/api/v7/cardinfo.php')
         displayApiData(json.data)
     })
 
-// var defense = "def"
-// var stregnth = "atk"
-// var name = "name"
 
+//get chosen data from api
 function displayApiData(data) {
     let dataEl = document.querySelector('#data');
     data.forEach(card => {
@@ -43,19 +22,10 @@ function displayApiData(data) {
         h2.append(h2TExt2)
         dataEl.append(h2)  
     }); 
-    // frontData.forEach(card => {
-    //     let h2 = document.createElement('h2');
-    //     let h2TExt = document.createTextNode(card.name)
-    //     h2.append(h2TExt)
-    //     dataEl.append(h2) 
-    // })
-    // backData.forEach(card => {
-    //     let h3 = document.createElement('h3');
-    //      let h3TExt1 = document.createTextNode(card.race)
-    //      let h3TExt2 = document.createTextNode(card.type)
-    //      h3.append(h3TExt1)
-    //      h3.append(h3TExt2)
-    //      dataEl.append(h3) 
-    //  }) 
+     //this put ALL of the data into a single div, when I need a seperate div for each "card" but I don't know how to do that
 }
-        
+//flip the card
+data.addEventListener( 'click', function () {
+    data.classList.toggle('is-flipped');
+    console.log("flip")
+})      
