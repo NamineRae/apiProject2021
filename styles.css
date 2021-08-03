@@ -14,13 +14,13 @@
     justify-content: space-evenly;
 }
 #data {
-    /* display: flex;
+    display: flex;
     margin: 50px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: flex-start;
-    background-color: rgb(255, 196, 153); color is here to visually identify div while coding */
+    /*background-color: rgb(255, 219, 194); /*color is here to visually identify div while coding */
     /* max-height: 3in;
     max-width: 1in;
     min-height: 3in;
@@ -48,9 +48,6 @@
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
   }
   
   .card.is-flipped {
@@ -74,7 +71,7 @@
   }
   
   .card__face--back {
-    background: rgb(144, 242, 255);
+    background: rgb(251, 144, 255);
     transform: rotateY(180deg);
   }
   
