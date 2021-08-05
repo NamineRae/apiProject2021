@@ -8,11 +8,11 @@
     justify-content: center;
 }
 
-#buttons {
+/* #buttons {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-}
+} */
 #data {
     display: flex;
     margin: 50px;
@@ -26,12 +26,6 @@
     min-height: 3in;
     min-width: 1in; */
 }
-
-/* #card {
-    /* background-color: cornflowerblue;
-     margin: 9px;  
- } this is meant to be the styling for each individual "card" */
-
   
  .scene {
     width: 200px;

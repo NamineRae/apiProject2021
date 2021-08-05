@@ -115,12 +115,18 @@ console.log(cardContainer)
         back.append(raceP) 
         back.append(typeP)
 
-        cardContainer.addEventListener( 'click', function() {
-            cardContainer.classList.toggle('is-flipped');
-          });
+        // cardContainer.addEventListener( 'click', function() {
+        //     cardContainer.classList.toggle('is-flipped');
+        //   });
         
+        var cardContainer = document.querySelector('.card');
+            cardContainer.addEventListener( 'click', function() {
+            cardContainer.classList.toggle('is-flipped');
 
         dataEl.append(cardContainer)
-    }); 
+
+    });
+}); 
      
+    
 }
