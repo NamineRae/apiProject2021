@@ -82,7 +82,7 @@ cardContainer.append(content)
 content.append(front)
 content.append(back)
 
-console.log(cardContainer)
+// console.log(cardContainer)
 
         // console.log(card.card_images[0].image_url_small)
 
@@ -115,18 +115,16 @@ console.log(cardContainer)
         back.append(raceP) 
         back.append(typeP)
 
-        // cardContainer.addEventListener( 'click', function() {
-        //     cardContainer.classList.toggle('is-flipped');
-        //   });
-        
-        var cardContainer = document.querySelector('.card');
-            cardContainer.addEventListener( 'click', function() {
+        cardContainer.addEventListener( 'click', function() {
             cardContainer.classList.toggle('is-flipped');
+          });
+
+        
+        // var cardContainer = document.querySelector('.card');
+        //     cardContainer.addEventListener( 'click', function() {
+        //     cardContainer.classList.toggle('is-flipped');
 
         dataEl.append(cardContainer)
 
-    });
-}); 
-     
-    
+    });   
 }
